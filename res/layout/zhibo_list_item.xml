@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:padding="10dp" >
+
+        <!-- <net.easyidol.view.RoundImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/icon"
+            android:layout_width="@dimen/zhibo_list_item_icon_size"
+            android:layout_height="@dimen/zhibo_list_item_icon_size"
+            android:scaleType="fitXY"
+            android:src="@drawable/zhibo_item_default_icon"
+            app:riv_border_color="@color/color_mountain_mist"
+            app:riv_border_width="1dp"
+            app:riv_corner_radius="10dp" /> -->
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/icon"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/icon"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/color_mountain_mist"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/renshu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/icon"
+            android:drawableLeft="@drawable/jinxingzhong_renshu"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size_small" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/icon"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/color_blaze_orange"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/sub_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/color_ironside_gray"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/icon"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/icon"
+            android:src="@drawable/jinxingzhong" />
+
+        <TextView
+            android:id="@+id/time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/icon"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_mountain_mist"
+            android:textSize="@dimen/text_size_small" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/color_iron" />
+
+</LinearLayout>

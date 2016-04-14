@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_bar"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/white" >
+
+  
+
+    
+
+    <LinearLayout
+        android:id="@+id/wenzi_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:layout_toLeftOf="@+id/shuohua_area" >
+
+        <ImageView
+            android:id="@+id/iv_operate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/square_live_tool_input_selector"
+            android:paddingLeft="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shuohua_area"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+        android:layout_alignParentRight="true"
+         >
+
+        <ImageView
+            android:id="@+id/iv_shuohua"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/square_live_tool_type_selector"
+            android:paddingLeft="20dp"
+        	android:paddingRight="20dp"
+        	android:clickable="true" />
+        
+    </LinearLayout>
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_gray_02"
+        android:layout_alignParentTop="true"/>
+
+</RelativeLayout>

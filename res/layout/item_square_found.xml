@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attr="http://schemas.android.com/apk/res/com.mci.firstidol"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <LinearLayout
+        android:id="@+id/ll_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <LinearLayout
+            android:id="@+id/ll_user_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_user_logo"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/default_circle_img" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="恐龙的微笑"
+                    android:textColor="@color/color_gray_01"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10-26 17：00"
+                    android:textColor="@color/color_gray_02"
+                    android:textSize="9sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/ib_user_operate"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/square_found_hm" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_img" 
+            />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_operate"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <!--
+        <RelativeLayout android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+         <Button
+            android:id="@+id/btn_meng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textSize="10sp"
+            android:text="萌萌哒!"
+            android:drawableTop="@drawable/square_found_meng" 
+            android:layout_centerInParent="true"/> 
+            
+        
+        <com.mci.firstidol.opensource.gifview.GifView 
+            android:id="@+id/gif_meng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+        
+        </RelativeLayout>
+        -->
+
+
+        <!--
+        <Button
+            android:id="@+id/btn_tian"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:textSize="10sp"
+            android:text="舔一下!"
+            android:drawableTop="@drawable/square_found_tian" />
+        
+        <Button
+            android:id="@+id/btn_shuai"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:textSize="10sp"
+            android:text="帅炸天!"
+            android:drawableTop="@drawable/square_found_shuai" />
+        
+        <Button
+            android:id="@+id/btn_jia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:textSize="10sp"
+            android:text="嫁给他!"
+            android:drawableTop="@drawable/square_found_jia" />
+        -->
+
+        <com.mci.firstidol.view.PopAnimView
+            android:id="@+id/view_meng"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="0" />
+
+        <com.mci.firstidol.view.PopAnimView
+            android:id="@+id/view_tian"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="1" />
+
+        <com.mci.firstidol.view.PopAnimView
+            android:id="@+id/view_shuai"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="2" />
+
+        <com.mci.firstidol.view.PopAnimView
+            android:id="@+id/view_jia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="3" />
+
+        <Button
+            android:id="@+id/btn_comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/square_found_comment"
+            android:tag="4"
+            android:text="评论"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_infonum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp" >
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/square_found_yuedu" />
+
+        <TextView
+            android:id="@+id/tv_read"
+            style="@style/TextViewStyle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="66" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50dp"
+            android:src="@drawable/square_found_shoucang" />
+
+        <TextView
+            android:id="@+id/tv_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:text="66个朋友推荐!"
+            android:textColor="@color/color_blue_01"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/square_live_detail_send_num" />
+
+        <LinearLayout
+            android:id="@+id/ll_comment_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="6dp" >
+            
+            <LinearLayout
+            android:id="@+id/ll_comment_list_item1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+                
+            <TextView android:id="@+id/tv_comment_nickname1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_blue_01"
+                android:textSize="10sp"
+                android:text="昵称1"/>
+            <TextView android:id="@+id/tv_comment_content1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_black"
+                android:textSize="10sp"
+                android:singleLine="true"
+                android:layout_marginLeft="5dp"
+                android:text=""/>
+            </LinearLayout>
+            
+            <LinearLayout
+            android:id="@+id/ll_comment_list_item2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp">
+                
+            <TextView 
+                android:id="@+id/tv_comment_nickname2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_blue_01"
+                android:textSize="10sp"
+                android:text="昵称2"/>
+            <TextView 
+                android:id="@+id/tv_comment_content2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_black"
+                android:textSize="10sp"
+                android:singleLine="true"
+                android:layout_marginLeft="5dp"
+                android:text=""/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

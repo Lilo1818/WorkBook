@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+    *{
+        margin:0;
+        padding:0;
+    }
+    body {
+        padding:17px;
+        color:#333;
+        font-size: 14px;
+        line-height: 1.6;
+        overflow: hidden;
+        white-space: normal;
+        word-wrap: break-word;
+        background-color: #fff;
+    }
+    p {
+        text-align:justify;
+        margin: 12px 0;
+    }
+    </style>
+</head>
+<body>
+    <script src="jquery-1.8.3.min.js"></script>
+    <script src="tmpl.js"></script>
+    <script>
+        (function () {
+            var article = {
+                render: function (result) {
+                    var con = tmpl.render("result-tmpl", result);
+                    $("body").html(con);
+                }
+            };
+
+            window.article = article;
+            $(document).ready(function () {
+                window.location.href = "mci://docready";
+            });
+        })();
+    </script>
+    <script type="text/html" id="result-tmpl">
+        <div id="content"><#= Content #></div>
+    </script>
+</body>
+</html>

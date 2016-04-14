@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/olive">
+
+    <LinearLayout style="@style/personal_layout_style" >
+        <RelativeLayout
+            style="@style/personal_item_layout" >
+
+            <TextView
+                android:id="@+id/text_info"
+                style="@style/apply_master_text_left"
+                android:text="@string/apply_email" />
+
+            <EditText 
+                android:id="@+id/edit_email"
+                style="@style/apply_master_edit_style"
+                android:hint="@string/apply_email_hint"/>
+        </RelativeLayout>
+        <View style="@style/gray_view_line" />
+        <RelativeLayout
+            style="@style/personal_item_layout" >
+
+            <TextView
+                android:id="@+id/text_info"
+                style="@style/apply_master_text_left"
+                android:text="@string/apply_qq" />
+
+            <EditText 
+                android:id="@+id/edit_qq"
+                style="@style/apply_master_edit_style"
+                android:hint="@string/apply_qq_hint"/>
+        </RelativeLayout>
+        <View style="@style/gray_view_line" />
+        <RelativeLayout
+            style="@style/personal_item_layout" >
+
+            <TextView
+                android:id="@+id/text_info"
+                style="@style/apply_master_text_left"
+                android:text="@string/apply_address" />
+
+            <EditText 
+                android:id="@+id/edit_address"
+                style="@style/apply_master_edit_style"
+                android:hint="@string/apply_address_hint"/>
+        </RelativeLayout>
+        <View style="@style/gray_view_line" />
+        <RelativeLayout
+            style="@style/personal_item_layout" >
+
+            <TextView
+                android:id="@+id/text_info"
+                style="@style/apply_master_text_left"
+                android:text="@string/apply_reason" />
+
+            <EditText 
+                android:id="@+id/edit_reason"
+                style="@style/apply_master_edit_style"
+                android:hint="@string/apply_reason_hint"/>
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <Button 
+        android:id="@+id/btn_apply"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/upload_sure"/>
+
+</LinearLayout>

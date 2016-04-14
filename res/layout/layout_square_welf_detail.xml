@@ -1,0 +1,87 @@
+<com.mci.firstidol.view.StickyNavLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@id/id_stickynavlayout_topview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/square_live_detail_title_bg" >
+
+        <ImageView 
+            android:id="@+id/iv_user_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/user_logo"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/iv_user_logo"
+            android:textColor="@color/color_black"
+            android:text="冯建宇钻专访直播"
+            android:textSize="16sp"
+            android:layout_marginLeft="4dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:text="来一场关于未来的"
+            android:textSize="14sp"
+            android:textColor="@color/color_purple_01" />
+
+        <TextView
+            android:id="@+id/tv_look_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/iv_user_logo"
+            android:layout_below="@+id/iv_user_logo"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/square_live_detail_look_num"
+            android:textColor="@color/color_black"
+            android:text="10"
+            android:textSize="13sp" />
+        
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_look_num"
+            android:layout_marginRight="10dp"
+            android:textSize="13sp"
+            android:textColor="@color/color_black"
+            android:text="距离开始 19:00" />
+
+    </RelativeLayout>
+
+    <com.mci.firstidol.view.SimpleViewPagerIndicator
+        android:id="@id/id_stickynavlayout_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffffff"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+    </com.mci.firstidol.view.SimpleViewPagerIndicator>
+	<View android:layout_width="match_parent"
+	    android:layout_height="0.5dp"
+	    android:background="@color/color_gray_02"/>
+    <android.support.v4.view.ViewPager
+        android:id="@id/id_stickynavlayout_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#44ff0000" >
+    </android.support.v4.view.ViewPager>
+    
+ </com.mci.firstidol.view.StickyNavLayout> 

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Easy Idol</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="str_update_version_message_info">Easy%1$s更新内容:\n %2$s</string>
+    <string name="app_upgrade_title">新版发布</string>
+    <string name="app_upgrade_confirm">立即更新</string>
+    
+    <string name="soft_update_no">已经是最新版本</string>
+    <string name="soft_update_title">软件更新</string>
+    <string name="soft_update_info">检测到新版本，立即更新吗</string>
+    <string name="soft_update_updatebtn">更新</string>
+    <string name="soft_update_later">稍后更新</string>
+    <string name="soft_updating">正在更新</string>
+    <string name="soft_update_cancel">取消</string>
+
+    <!-- app 信息提示配置 -->
+    <string name="string_data_error">数据加载失败,请重试</string>
+    <string name="string_network_error">网速连接异常,请检查手机网络后再试</string>
+    <string name="string_connection_server">服务器连接失败,请稍后再试</string>
+    <string name="string_load_retry">重试</string>
+    <string name="loading_on_progress">正在更新数据</string>
+    <string name="wdt_network_error_tip">对不起,当前没有检测到可用网络,请重新连接或稍后再试!</string>
+    <string name="check_network">网络不可用,&#160;请检查您的网络。</string>
+    <string name="nil_str"></string>
+    <string name="request_loading">数据请求中，请稍候……</string>
+    <string name="request_title">数据请求发送中……</string>
+    <string name="version_name">版本: v%s</string>
+    <string name="save">保存</string>
+    <string name="version">version:1.1</string>
+    <string name="title1">广场</string>
+    <string name="title2">追星</string>
+    <string name="title3">商城</string>
+    <string name="title4">我的</string>
+    <string name="progressActivityErrorButton">Try Again</string>
+    <string name="progressActivityEmptyTitlePlaceholder">Nothing Here</string>
+    <string name="progressActivityEmptyContentPlaceholder">We couldn\'t find anything. Tap the button to take your first image</string>
+    <string name="progressActivityErrorTitlePlaceholder">No Connection</string>
+    <string name="progressActivityErrorContentPlaceholder">We could not establish a connection with our servers. Please try again when you are connected to the internet.</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新…</string>
+    <string name="pull_to_refresh_release_label">放开以刷新…</string>
+    <string name="pull_to_refresh_refreshing_label">正在载入…</string>
+    <string name="pull_to_refresh_from_bottom_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_from_bottom_release_label">放开以加载</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">正在加载…</string>
+    <string name="image_picker">Pick image</string>
+    <string name="done">OK</string>
+    <string name="reached_max_size">Has picked the max allow size!</string>
+    <string name="pick_title">选择图片</string>
+    <string name="btn_done">完成</string>
+    
+    <string name="dlna_device_title">"%s"正在播放中</string>
+    
+    <string name="folder_all">All Images</string>
+    <string name="preview">Preview</string>
+    <string name="msg_no_camera">No system camera found</string>
+    <string name="msg_amount_limit">Select images amount is limit</string>
+    <string name="action_done">Done</string>
+    <string name="photo_unit">Shot</string>
+    <string name="tip_take_photo">Take photo</string>
+    
+    <string name="hint_error_network_title">网络异常</string>
+    <string name="hint_error_network_content">请检查网络后重新加载</string>
+    
+    <string name="hint_error_request_title">请求异常</string>
+    <string name="hint_error_request_content"></string>
+    <string name="hint_error_nodata_title">无数据</string>
+    <string name="hint_error_nodata_content"></string>
+    
+    <string name="hint_error_button_title">点击重试</string>
+
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+    
+    <!-- 弹出框 -->
+    <string name="alert_title">Title</string>
+    <string name="alert_content">Content</string>
+    <string name="alert_confirm">Confirm</string>
+    <string name="alert_cancle">Cancel</string>
+    <string name="alert_hint">Hint</string>
+
+    <string name="minutes_ago">分钟前</string>
+    <string name="hours_ago">小时前</string>
+    <string name="days_ago">天前</string>
+
+    <!-- 菜单 -->
+    <string name="nav_send">发送</string>
+
+    <!-- 广场 -->
+    <string name="square_add_reply_hint">最大输入140个字符</string>
+    <string name="square_add_reply_title">评论详情</string>
+    <string name="square">广场</string>
+    <string name="star">追星</string>
+    <string name="shopping">商城</string>
+    <string name="personal">我的</string>
+    <string name="welfare_detail">活动详情</string>
+    <string name="welfare_detail_result">查看结果</string>
+    <string name="welfare_detail_join">立即参与</string>
+    <string name="shopping_detail">商品详情</string>
+    <string name="live_detail">直播详情</string>
+    <string name="dynamic">动态</string>
+    <string name="follow">关注</string>
+    <string name="follower">粉丝</string>
+    <string name="collection">收藏</string>
+    <string name="comment">评论</string>
+    <string name="notice">通知</string>
+    <string name="setting">设置</string>
+    <string name="edit_info">编辑资料</string>
+    <string name="banzhu_title">本版版主</string>
+    <string name="star_list">明星列表</string>
+    <string name="star_address">明星行程</string>
+    <string name="apply_master">申请版主</string>
+    <string name="text_mengmeng">萌萌哒</string>
+    <string name="text_kiss">舔一下</string>
+    <string name="text_shuai">帅炸了</string>
+    <string name="text_marry">嫁给他</string>
+    <string name="info_content">"这个人很懒，什么都没留下。。。"</string>
+    <string name="integration">积分</string>
+    <string name="my_star">我的追星</string>
+    <string name="my_notice">我的通知</string>
+    <string name="my_comment">我的评论</string>
+    <string name="my_collection">我的收藏</string>
+    <string name="video_play">视频播放</string>
+    <string name="logout">退出登录</string>
+    <string name="apply_info">发布详情</string>
+    <string name="my_appointment">我的预约</string>
+    <string name="my_info">我的资料</string>
+    <string name="my_follow">我的关注</string>
+    <string name="my_fans">我的粉丝</string>
+    <string name="add_trip">添加行程</string>
+
+    <!-- 登录/注册 -->
+    <string name="login_username">请输入用户名</string>
+    <string name="login_password">请输入密码</string>
+    <string name="register_phone">手机号/邮箱</string>
+    <string name="register_code">验证码</string>
+    <string name="register_nickename">昵称</string>
+    <string name="register_pwd">密码</string>
+    <string name="register_confirm_pwd">确认密码</string>
+    <string name="register_code_send">发送验证码</string>
+
+    <!-- 自定义弹出菜单 -->
+    <string name="btn_top">置顶</string>
+    <string name="btn_delete">删除</string>
+    <string name="btn_collection">收藏</string>
+    <string name="btn_report">举报</string>
+
+    <!-- 动画按钮 -->
+    <string name="anim_meng">萌萌嗒!</string>
+    <string name="anim_tian">舔一下!</string>
+    <string name="anim_shuai">帅炸啦!</string>
+    <string name="anim_jia">嫁给他!</string>
+
+    <!-- 设置 -->
+    <string name="setting_clear">清理占用空间</string>
+    <string name="setting_push">推送设置</string>
+    <string name="setting_help">帮助中心</string>
+    <string name="setting_comment">评论一下</string>
+    <string name="setting_tucao">吐槽一下</string>
+    <string name="setting_about">关于</string>
+
+    <!-- 申请版主 -->
+    <string name="apply_email">邮箱</string>
+    <string name="apply_qq">QQ号</string>
+    <string name="apply_address">所在地</string>
+    <string name="apply_reason">申请理由</string>
+    <string name="apply_email_hint">请输入邮箱</string>
+    <string name="apply_qq_hint">请输入QQ号</string>
+    <string name="apply_address_hint">请输入所在地</string>
+    <string name="apply_reason_hint">请输入申请理由</string>
+
+    <!-- 我的 -->
+    <string name="fans">粉丝</string>
+
+    <!-- 添加文章 -->
+    <string name="add_star_trip">添加明星行程</string>
+
+    <!-- 发布行程 -->
+    <string name="time">时间</string>
+    <string name="address">地点</string>
+    <string name="event">事件</string>
+    <string name="time_hint">点击选择时间</string>
+    <string name="address_hint">请输入地点</string>
+    <string name="event_hint">请输入事件</string>
+
+    <!-- 编辑个人信息 -->
+    <string name="nickname">昵称</string>
+    <string name="sex">性别</string>
+    <string name="birthday">生日</string>
+    <string name="location">所在地</string>
+    <string name="tip">标签</string>
+    <string name="myShow">个性签名</string>
+    
+    <string name="notice_setting_one">接受新消息通知</string>
+    <string name="notice_setting_two">通知显示消息详情</string>
+    
+    <string name="nickname_hint">请输入昵称</string>
+    <string name="sex_hint">请选择性别</string>
+    <string name="birthday_hint">请选择生日</string>
+    <string name="location_hint">请选择所在地</string>
+    <string name="tip_hint">无标签</string>
+    <string name="myShow_hint">无个人展示</string>
+    
+    <string name="about_content">Easy Idol App是中国No.1偶像潮流移动交互平台。每日不间断推送偶像资讯、独家专访、深度娱乐专题，潮流情报，随时随地轻松掌握最爱偶像的所有信息。精美写真、MV、现场视频，带给你赏心悦目的视听享受。好礼周周狂送！偶像限量版签名豪礼应有尽有。轻松拥有，你的随身偶像宝典！</string>
+    
+
+    <!-- ========= ShareSDK分享  START ========= -->
+
+    <string name="sm_item_demo">接口</string>
+    <string name="sm_item_custom_fields">自定义分享内容</string>
+    <string name="demo_share_all_gui">分享全部（有分享界面）</string>
+    <string name="demo_share_all">分享全部（无界面，直接分享）</string>
+    <string name="demo_get_access_token">获取AccessToken</string>
+    <string name="demo_get_my_info">获取授权用户资料</string>
+    <string name="demo_get_other_info">获取其他用户资料</string>
+    <string name="get_sina_friends_list">获取新浪微博关注列表</string>
+    <string name="get_tencent_friends_list">获取腾讯微博关注列表</string>
+    <string name="customer_douban">搜索用户</string>
+    <string name="customer_facebook">获取通知列表</string>
+    <string name="customer_nemb">获取推荐话题</string>
+    <string name="customer_renren">上传照片到用户的相册</string>
+    <string name="customer_sina">获取微博主页列表</string>
+    <string name="customer_qzone">发表日志到QQ空间</string>
+    <string name="customer_tencent">获取我的粉丝列表</string>
+    <string name="customer_twitter">获取主页列表</string>
+    <string name="customer_kaixin">获取可能认识的人</string>
+    <string name="customer_sohu">获取好友列表</string>
+    <string name="customer_youdao">获取笔记本列表</string>
+    <string name="customer_suishenkan">获取搜狐随身看书签列表</string>
+    <string name="customer_tumblr">获取Tumblr用户Post列表</string>
+    <string name="not_yet_authorized">尚未授权</string>
+    <string name="share_content">ShareSDK for Android不仅集成简单、支持如QQ好友、微信、新浪微博、腾讯微博等所有社交平台，而且还有强大的统计分析管理后台，实时了解用户、信息流、回流率、传播效应等数据，详情见官网http://mob.com @Mob移动开发者服务平台</string>
+    <string name="share_content_short">ShareSDK不仅集成简单、支持如微信、新浪微博、腾讯微博等平台，还有强大的统计分析管理后台，实时了解用户、信息流、回流率、传播效应等数据，详情见官网http://mob.com @Mob移动开发者服务平台</string>
+    <string name="evenote_title">ShareSDK是一个神奇的SDK</string>
+    <string name="update">文字分享</string>
+    <string name="image_upload">图片分享（本地图片）</string>
+    <string name="image_upload_bitmap">图片分享（Bitmap对象）</string>
+    <string name="image_upload_url">图片分享（网络图片）</string>
+    <string name="emoji_upload">表情分享（本地图片）</string>
+    <string name="emoji_upload_url">表情分享（网络图片）</string>
+    <string name="emoji_upload_bm">表情分享（Bitmap对象）</string>
+    <string name="music_upload">音乐分享</string>
+    <string name="video_upload">视频分享</string>
+    <string name="webpage_upload">网页分享（本地图片）</string>
+    <string name="webpage_upload_bitmap">网页分享（Bitmap对象）</string>
+    <string name="webpage_upload_url">网页分享（网络图片）</string>
+    <string name="app_upload">应用分享（携带文件）</string>
+    <string name="app_upload_extinfo">应用分享（携带脚本）</string>
+    <string name="file_upload">文件分享</string>
+    <string name="share_to_wechat">微信好友</string>
+    <string name="share_to_moment">微信朋友圈</string>
+    <string name="share_to_favorite">微信收藏</string>
+    <string name="wechat_demo_title">微信分享Demo标题</string>
+    <string name="qzone_add_blog_sample"><h1>QQ互联</h1><font color="red">轻松分享,</font><font color="green">快乐生活。</font><a href="http://connect.qq.com">详情请看。</a><img src="http://imgcache.qq.com/ptlogin/head/1_100.gif"></img></string>
+    <string name="wechat_client_is_not_installed_correctly">微信客户端未安装或版本太旧</string>
+    <string name="wechat_client_not_support_following_operation">微信客户端不支持第三方应用执行关注功能</string>
+    <string name="share_to_yixin">易信好友</string>
+    <string name="share_to_yixin_moment">易信朋友圈</string>
+    <string name="share_to_yixin_favorite">易信收藏</string>
+    <string name="yixin_demo_title">易信分享Demo标题</string>
+    <string name="receive_rewards">恭喜你得到%s个金币！</string>
+    <string name="buy_success">购买成功</string>
+    <string name="buy_failed">购买失败</string>
+    <string name="laiwangcustomize">自定义平台-来往</string>
+    <string name="qzone_customer_share_style">自定义QQ空间分享风格</string>
+    <string name="qq_share_way">请选择分享方式</string>
+    <string name="qq_share_from_qqlogin">QQ/QZone登录发微博</string>
+    <string name="qq_share_from_tlogin">腾讯微博登录发微博</string>
+    
+    
+    <string name="reporting">你应该保证你的举报行为基于善意，并代表你本人真实意思。EasyIdol App作为中立的平台服务者，收到你举报后，会尽快按照相关法律法规的规定独立判断进行处理。EasyIdol App讲会采取合理的措施保护你的个人信息；除法律规定的情形外，未经用户须后EasyIdol App不会向第三方公开、透漏你的个人信息。</string>
+
+    <!-- ========= ShareSDK分享  END ========= -->
+
+
+    <!-- ========= ShareSDK第三方登录  START ========= -->
+
+    <string name="userid_found">用户信息已存在，正在跳转登录操作…</string>
+    <string name="logining">使用%s帐号登录中…</string>
+    <string name="auth_cancel">授权操作已取消</string>
+    <string name="auth_error">授权操作遇到错误，请阅读Logcat输出</string>
+    <string name="auth_complete">授权成功，正在跳转登录操作…</string>
+
+    <!-- ========= ShareSDK第三方登录  END ========= -->
+
+</resources>

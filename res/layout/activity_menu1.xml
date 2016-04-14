@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/rl_main"
+    android:background="@color/green" >
+
+    
+    <LinearLayout android:id="@+id/ll_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@color/blue">
+    </LinearLayout>
+    
+    <!-- <LinearLayout android:id="@+id/ll_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/layout_menu">
+    </LinearLayout> -->
+    
+    <!-- <include android:id="@+id/layout_menu"  layout="@layout/menu1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/> -->
+
+</RelativeLayout>

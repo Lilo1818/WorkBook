@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.mci.firstidol.view.ProgressActivity 
+     xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:progressActivity="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/progressActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        progressActivity:emptyBackgroundColor="#FFFFFF"
+        progressActivity:emptyContentTextColor="@color/grey"
+        progressActivity:emptyTitleTextColor="@color/grey"
+        progressActivity:errorBackgroundColor="#FFFFFF"
+        progressActivity:errorButtonTextColor="@color/grey"
+        progressActivity:errorContentTextColor="@color/grey"
+        progressActivity:errorTitleTextColor="@color/grey"
+        progressActivity:loadingBackgroundColor="#FFFFFF" >
+        
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_white" >
+    
+    
+        
+	<FrameLayout 
+	    android:id="@+id/fl_fragment_container"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"></FrameLayout>
+	
+	<include layout="@layout/layout_square_found_detail_tool"/>
+	
+	
+</LinearLayout>
+
+</com.mci.firstidol.view.ProgressActivity>

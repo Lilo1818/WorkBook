@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <com.mci.firstidol.view.ProgressActivity
+        xmlns:progressActivity="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/progressActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        progressActivity:emptyBackgroundColor="#FFFFFF"
+        progressActivity:emptyContentTextColor="@color/grey"
+        progressActivity:emptyTitleTextColor="@color/grey"
+        progressActivity:errorBackgroundColor="#FFFFFF"
+        progressActivity:errorButtonTextColor="@color/grey"
+        progressActivity:errorContentTextColor="@color/grey"
+        progressActivity:errorTitleTextColor="@color/grey"
+        progressActivity:loadingBackgroundColor="#FFFFFF" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/pull_refresh_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#19000000"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="@null"
+            android:smoothScrollbar="true"
+            xmlns:ptr="http://schemas.android.com/apk/res-auto" 
+        ptr:ptrAnimationStyle="flip" />
+
+        <LinearLayout
+            android:id="@+id/ll_flow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/square_live_header_bg"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="bottom"
+                android:text="直播预告"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </FrameLayout>
+    
+    </com.mci.firstidol.view.ProgressActivity>
+
+</LinearLayout>

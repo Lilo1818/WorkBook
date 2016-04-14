@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layoutAnimation xmlns:android="http://schemas.android.com/apk/res/android"
+    android:animation="@anim/item_down"
+    android:animationOrder="normal"
+    android:delay="3" />
+<!--
+  animationOrder 的值:
+    normal  0  上至下
+    reverse 1  倒序
+    random  2  随机  
+-->

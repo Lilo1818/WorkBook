@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/item_shopping_padding"
+        android:layout_marginLeft="@dimen/item_shopping_padding"
+        android:layout_marginRight="@dimen/item_shopping_padding"
+        android:background="@drawable/border_gray_corner">
+        
+        <ImageView 
+            android:id="@+id/image_bitmap"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"/>
+        
+        <TextView
+            android:id="@+id/text_info"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/item_padding_top"
+            android:layout_marginBottom="@dimen/item_padding_top"
+            android:layout_marginLeft="@dimen/item_shopping_padding"
+            android:textSize="12sp"
+            android:layout_below="@id/image_bitmap"/>
+        
+        <TextView 
+            android:id="@+id/text_price"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/item_padding_top"
+            android:layout_marginBottom="@dimen/item_padding_top"
+            android:layout_marginRight="@dimen/item_shopping_padding"
+            android:textSize="12sp"
+            android:textColor="@color/color_main"
+            android:layout_below="@id/image_bitmap"/>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

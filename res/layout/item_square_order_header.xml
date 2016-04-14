@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/square_order_benqi" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本期排行榜"
+            android:textColor="@color/color_purple_01"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/ll_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout android:id="@+id/ll_2th"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:gravity="center_horizontal|bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_2th_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/color_purple_01"
+                android:textSize="13sp"
+                android:tag="101"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="积分:"
+                    android:textColor="@color/color_gray_02"
+                    android:textSize="11sp"
+                    android:tag="201" />
+
+                <TextView
+                    android:id="@+id/tv_2th_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/color_gray_02"
+                    android:textSize="11sp"
+                    android:tag="301"
+                     />
+            </LinearLayout>
+
+            <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_2th_user_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/default_img"
+                    android:tag="401" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="15dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@+id/iv_2th_user_img"
+                    android:layout_alignRight="@+id/iv_2th_user_img"
+                    android:layout_marginBottom="-20dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/square_order_2th" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_2th_user_img"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="4dp"
+                    android:text="NO.2"
+                    android:textColor="@color/color_gray_02"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout android:id="@+id/ll_1th"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:gravity="center_horizontal|bottom"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_1th_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/color_purple_01"
+                android:textSize="13sp"
+                android:tag="100"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="积分:"
+                    android:textColor="@color/color_gray_02"
+                    android:textSize="11sp"
+                    android:tag="200" />
+
+                <TextView
+                    android:id="@+id/tv_1th_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/color_gray_02"
+                    android:textSize="11sp"
+                    android:tag="300" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/iv_1th_user_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/default_img"
+                    android:tag="400" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@+id/iv_1th_user_img"
+                    android:layout_alignRight="@+id/iv_1th_user_img"
+                    android:layout_marginBottom="-20dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/square_order_1th" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_1th_user_img"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="4dp"
+                    android:text="NO.1"
+                    android:textColor="@color/color_gray_02"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout android:id="@+id/ll_3th"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="center_horizontal|bottom"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_3th_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/color_purple_01"
+                android:textSize="13sp"
+                android:tag="102"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="积分:"
+                    android:textColor="@color/color_gray_02"
+                    android:textSize="11sp"
+                    android:tag="202" />
+
+                <TextView
+                    android:id="@+id/tv_3th_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/color_gray_02"
+                    android:textSize="11sp"
+                    android:tag="302" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp" >
+
+                <ImageView
+                    android:id="@+id/iv_3th_user_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/default_img"
+                    android:tag="402" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@+id/iv_3th_user_img"
+                    android:layout_alignRight="@+id/iv_3th_user_img"
+                    android:layout_marginBottom="-20dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/square_order_3th" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_3th_user_img"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="4dp"
+                    android:text="NO.3"
+                    android:textColor="@color/color_gray_02"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="20dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

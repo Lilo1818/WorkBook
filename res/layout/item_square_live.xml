@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@color/white"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:background="@color/transparent" />
+
+        <RelativeLayout
+            android:id="@+id/rl_time_bg"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:background="@drawable/square_live_dialog_bg"
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp" >
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/imageView1"
+                android:gravity="center"
+                android:text="10月24日"
+                android:textSize="8sp"
+                android:textColor="@color/color_gray_02" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/square_live_xuxian"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView1"
+                android:gravity="center"
+                android:text="22:00"
+                android:textSize="9sp"
+                android:textColor="@color/color_gray_02" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:background="@color/transparent" />
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/linearLayout0"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/linearLayout1" >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="@color/color_blue_02" />
+
+        <ImageView
+                android:id="@+id/iv_live_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="4dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/square_live_red" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/color_blue_02" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/linearLayout0"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="4dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp" >
+
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp" >
+            
+            
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical" >
+             <ImageView
+                android:id="@+id/iv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/square_live_running"/>
+                    
+                    <TextView
+                android:id="@+id/tv_hint_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3天"
+                android:textSize="11sp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/color_gray_02"
+                android:paddingLeft="4dp" />
+           </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_starname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="李忠硕"
+                android:textSize="15sp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/color_purple_01" />
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Live上海演唱会"
+                android:textSize="15sp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/color_purple_01" />
+            
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical" >
+				
+                <ImageView
+                android:id="@+id/iv_person_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/square_live_red_person_num"/>
+                    
+                    <TextView
+                android:id="@+id/tv_person_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123456"
+                android:textSize="10sp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/color_gray_02"
+                android:paddingLeft="4dp" />
+
+        	</LinearLayout>
+
+        </LinearLayout>
+        
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            
+            	<ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="105dp"
+                android:layout_height="70dp"
+                android:src="@drawable/default_img"
+                android:scaleType="fitXY" />
+            	
+            	<ImageView
+                android:id="@+id/iv_dujia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/square_live_dujia"
+                android:layout_alignTop="@+id/iv_icon"
+                android:layout_alignRight="@+id/iv_icon"
+                android:visibility="gone"
+                
+                 />
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_gray_02"
+        android:layout_toRightOf="@+id/linearLayout1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        />
+
+</RelativeLayout>

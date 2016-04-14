@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include
+            android:id="@+id/loading"
+            layout="@layout/resources_progress_loading"/>
+
+ <com.mci.firstidol.activity.ProgressActivity
+    xmlns:progressActivity="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/progress"
+    android:layout_width="match_parent"
+    android:layout_height="0.0dip"
+    android:layout_weight="1.0"
+    progressActivity:loadingBackgroundColor="#FFFFFF"
+    progressActivity:emptyBackgroundColor="#fbc02d"
+    progressActivity:emptyContentTextColor="#FFFFFF"
+    progressActivity:emptyTitleTextColor="#FFFFFF"
+    progressActivity:errorBackgroundColor="#42a5f5"
+    progressActivity:errorButtonTextColor="#FFFFFF"
+    progressActivity:errorContentTextColor="#FFFFFF"
+    progressActivity:errorTitleTextColor="#FFFFFF">
+    <LinearLayout
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+    
+    </com.mci.firstidol.activity.ProgressActivity>
+
+    <LinearLayout
+        android:id="@+id/msm_error_view"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/msm_network_flag"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/textview_network_tips"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="网络异常"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button_retry"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="重新加载" />
+    </LinearLayout>
+
+</LinearLayout>

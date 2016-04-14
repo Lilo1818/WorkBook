@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/olive"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/personal_layout_style"
+        android:layout_marginTop="15dp" >
+
+        <EditText
+            android:id="@+id/text_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/transparent"
+            android:gravity="top"
+            android:hint="休闲的一天"
+            android:maxEms="100"
+            android:minHeight="160dp"
+            android:padding="10dp"
+            android:textColor="@color/text_lower_black"
+            android:textSize="12sp" />
+
+        <GridView
+            android:id="@+id/hot_grid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:horizontalSpacing="1.0dip"
+            android:listSelector="@color/transparent"
+            android:numColumns="4"
+            android:columnWidth="80dp"
+            android:paddingBottom="1.0dip"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="1.0dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/personal_layout_style"
+        android:layout_marginTop="15dp" >
+
+        <RelativeLayout
+            android:id="@+id/layout_addStarTrip"
+            android:visibility="gone"
+            style="@style/personal_item_layout" >
+
+            <ImageView
+                android:id="@+id/image"
+                style="@style/personal_image_left"
+                android:background="@drawable/star_upload_address" />
+
+            <TextView
+                style="@style/personal_text_left"
+                android:layout_toRightOf="@id/image"
+                android:text="@string/add_star_trip" />
+
+            <ImageView style="@style/personal_arrow_right" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

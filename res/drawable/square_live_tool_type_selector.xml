@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/square_found_detail_comment1" />
+    <item android:drawable="@drawable/square_live_detail_voice_icon" />
+</selector>

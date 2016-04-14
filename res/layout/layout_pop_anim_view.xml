@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:id="@+id/rl_main2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true" >
+
+            <ImageView
+                android:id="@+id/iv_static"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/a0" />
+
+            <ImageView
+                android:id="@+id/iv_anim"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:visibility="invisible" />
+        </RelativeLayout>
+        <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_main2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-10dp"
+                android:text="萌一下"
+                android:textSize="10sp" />
+    </RelativeLayout>
+
+</LinearLayout>

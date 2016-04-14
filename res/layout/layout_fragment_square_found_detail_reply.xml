@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/ll_square_livechat_detail" >
+    
+    <com.mci.firstidol.view.ProgressActivity
+        xmlns:progressActivity="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/progressActivity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        progressActivity:emptyBackgroundColor="#FFFFFF"
+        progressActivity:emptyContentTextColor="@color/grey"
+        progressActivity:emptyTitleTextColor="@color/grey"
+        progressActivity:errorBackgroundColor="#FFFFFF"
+        progressActivity:errorButtonTextColor="@color/grey"
+        progressActivity:errorContentTextColor="@color/grey"
+        progressActivity:errorTitleTextColor="@color/grey"
+        progressActivity:loadingBackgroundColor="#FFFFFF" >
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/pull_refresh_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#19000000"
+        android:dividerHeight="0dp"
+        android:listSelector="@null"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        xmlns:ptr="http://schemas.android.com/apk/res-auto" 
+        ptr:ptrAnimationStyle="flip"/>
+    
+    </com.mci.firstidol.view.ProgressActivity>
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        
+        <View 
+            android:id="@+id/v_sep"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_gray_02"
+            android:layout_alignParentTop="true"/>
+        <ImageButton
+            android:id="@+id/btn_reply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white"
+            android:src="@drawable/square_found_reply_send"
+            android:padding="8dp"
+            android:layout_below="@+id/v_sep" />
+    </RelativeLayout>
+    
+    
+   
+</LinearLayout>

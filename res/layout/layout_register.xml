@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_main_bg"
+    android:focusable="true"  
+	android:focusableInTouchMode="true"
+    >
+    
+    
+<ScrollView 
+    
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+    >
+<LinearLayout 
+    
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:clickable="true"
+    android:id="@+id/ll_register_main"
+    android:gravity="top"
+    
+     >
+     
+    <ImageView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/register_header_img"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp"/>
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:paddingLeft="45dp"
+        android:gravity="center"
+        android:background="@drawable/register_phone"
+        android:hint="@string/register_phone"
+        android:singleLine="true">
+        
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"  >
+		
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/register_code"
+            android:hint="@string/register_code"
+            android:singleLine="true" >
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_send_code"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:background="@drawable/register_code_normal"
+            android:textColor="@color/color_white"
+            android:text="@string/register_code_send"/>
+        
+    </LinearLayout>
+    
+    
+    <EditText
+        android:id="@+id/et_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:paddingLeft="45dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_username_bg"
+        android:hint="@string/register_nickename"
+        android:singleLine="true" />
+    
+    <EditText
+        android:id="@+id/et_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:paddingLeft="45dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:background="@drawable/login_password_bg"
+        android:hint="@string/register_pwd"
+        android:singleLine="true"
+        android:inputType="textPassword" />
+    
+    <EditText
+        android:id="@+id/et_confirm_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:paddingLeft="45dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:background="@drawable/login_password_bg"
+        android:hint="@string/register_confirm_pwd"
+        android:singleLine="true"
+        android:inputType="textPassword"  />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:paddingLeft="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/register_save" />
+
+</LinearLayout>
+
+</ScrollView>
+</LinearLayout>

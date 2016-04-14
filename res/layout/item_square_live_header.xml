@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/square_live_header_bg"
+    android:gravity="bottom"
+    android:paddingLeft="10dp"
+    android:paddingBottom="4dp" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="bottom"
+        android:text="直播预告"
+        android:textSize="16sp"
+        android:textColor="@color/black" />
+
+</LinearLayout>

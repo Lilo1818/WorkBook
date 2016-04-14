@@ -1,0 +1,342 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+    *{
+        margin:0;
+        padding:0;
+    }
+    body {
+        color:#333;
+        font-size: 16px;
+        line-height: 1.5;
+        font-family: "Helvetica Neue", Helvetica;
+        padding-bottom: 30px;
+        background-color: #f5f5f5;
+        -webkit-tap-highlight-color:rgba(0,0,0,0);
+    }
+    li {
+        list-style-type: none;
+    }
+    .night {
+        color: #f1efef;
+        background-color: #000;
+    }
+
+    .caption h1 {
+        padding: 12px 14px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    p.infor {
+        font-size: 10px;
+        line-height: 14px;
+        padding: 7px 14px 10px;
+        border-top:1px solid #e5e5e5;
+    }
+    p.infor span {
+        margin-right: 2em;
+    }
+    p.infor span.praise {
+        margin-right: 0;
+    }
+    p.infor span.comment, p.infor span.praise {
+        float: right;
+    }
+    
+    .content {
+        overflow: hidden;
+        padding: 4px 14px 0;
+        white-space: normal;
+        word-wrap: break-word;
+    }
+    .content p {
+        text-align:justify;
+        margin: 15px 0;
+    }
+    .img-wrap {
+        display: block;
+        background: url("def.png") center center no-repeat;
+    }
+    .img-wrap.hide {
+        background: none;
+    }
+    .content img{
+        padding: 4px;
+        display: block;
+        margin: 0 auto 15px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+    }
+    .content video {
+        max-width: 100%;
+    }
+    .activity {
+        padding: 15px 0;
+    }
+    .activity a {
+        color: #fff;
+        font-size: 16px;
+        display: block;
+        width: 286px;
+        height: 40px;
+        margin: 0 auto;
+        line-height: 40px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .default a, .coming a, .joined a {
+        background-color: #b6b6b6;
+    }
+    .join a, .result a {
+        background-color: #ff6699;
+    }
+    .join a:active, .result a:active {
+        background-color: #ff99cc;
+    }
+    
+    .ke-taobao {
+        color:#fff;
+        display:block;
+		width:286px;
+		height:40px;
+        margin:15px auto;
+        font-size: 16px;
+        line-height: 40px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #f60;
+        border-radius: 5px;
+    }
+    
+    .ad{
+        margin:15px 14px;
+    }
+    .ad img {
+        max-width: 100%;
+    }
+
+    section h6 {
+        margin:0;
+        padding:0 12px;
+        color:#f60;
+        font-size:15px;
+        line-height:1.7;
+        font-weight:normal;
+        background-color: #f0f0f0;
+        border-left:5px solid #ff8243;
+    }
+    section span {
+        color: #999;
+        font-size: 9px;
+    }
+    .vote, .voted {
+        margin: 10px 0;
+    }
+    .vote p.title, .voted p.title {
+        height: 15px;
+        margin:12px 0 7px;
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .vote span.type {
+        color: #fff;
+        float: right;
+        padding: 0 8px;
+        border-radius: 3px;
+        background-color: #f60;
+    }
+    .vote b, .voted b {
+        font-weight: normal;
+    }
+    .vote ul, .voted ul {
+        margin: 10px 0;
+        padding: 0 17px;
+    }
+    .vote > p, .voted > p {
+        padding: 0 17px;
+    }
+    .vote li{
+        color:#666;
+        font-size:14px;
+        line-height:15px;
+        margin-bottom:25px;
+        vertical-align:middle;
+    }
+    .vote li:last-child {
+        margin-bottom: 0;
+    }
+    .vote li em {
+        float:left;
+        display:block;
+        overflow:hidden;
+        /*width: 11px;
+        height: 11px;
+        padding: 1px;*/
+        width:15px;
+        height:15px;
+        margin-right: 15px;
+        vertical-align:middle;
+        /*border:1px solid #9c9c9c;
+        border-radius: 7.5px;*/
+        background:url("circle.png") no-repeat left center;
+    }
+    .vote li em.selected {
+        /*background-color: #9c9c9c;
+        background-clip: content-box;*/
+        background-image:url("circle-focus.png");
+    }
+    .vote p:last-child {
+        margin-bottom: 7px;
+    }
+    .voted li {
+        color:#999;
+        font-size:11px;
+        line-height:15px;
+        margin-bottom:14px;
+    }
+    .voted li div {
+        overflow:hidden;
+        margin-bottom:7px;
+    }
+    .voted li p {
+        float:left;
+        height:15px;
+        margin-right:8px;
+        border-radius:4px;
+    }
+    .voted li:nth-child(4n+1) p {
+        background-color:#ed4a4b;
+    }
+    .voted li:nth-child(4n+2) p {
+        background-color:#4dccf7;
+    }
+    .voted li:nth-child(4n+3) p {
+        background-color:#f5cc4c;
+    }
+    .voted li:nth-child(4n) p {
+        background-color:#5f8bbc;
+    }
+    .voted div span {
+        color:#333;
+        font-size: 14px;
+    }
+    .vote button {
+        color:#fff;
+        display:block;
+		width:286px;
+		height:40px;
+        margin:25px auto;
+        font-size: 16px;
+        line-height: 40px;
+        text-align: center;
+        background-color: #ff6699;
+        border: none;
+        border-radius: 5px;
+    }
+    </style>
+</head>
+
+<body class="body fnormal">
+   <div id="content"></div>
+    <script src="jquery-1.8.3.min.js"></script>
+    <script src="tmpl.js"></script>
+    <script src="article.js"></script>
+    <script type="text/html" id="content-tmpl">
+        <div class="content"><#= Content #></div>
+    </script>
+    <script type="text/html" id="vote-tmpl">
+        <section class="vote">
+            <h6>投票</h6>
+            <p class="title">
+                <span class="type">
+                <#if(VoteType == 1){#>
+                    多选
+                <#}else{#>
+                    单选
+                <#}#>
+                </span>
+                <b><#= VoteContent #></b>
+            </p>
+            <p><span style="margin-right:2em;">投票后查看结果</span><span><#= VoteCount #>人参与</span></p>
+            <ul>
+                <#for (var i = 0; i < voteDetails.length; i++) {#>
+                <li data-id="<#= voteDetails[i].Id #>"><em>&nbsp;</em><#= voteDetails[i].Title #></li>
+                <#}#>
+            </ul>
+            <button>确认投票</button>
+        </section>
+    </script>
+    <script type="text/html" id="voted-tmpl">
+        <section class="voted">
+            <h6>投票</h6>
+            <p class="title">
+                <span class="type">
+                <#if(VoteType == 1){#>
+                    多选
+                <#}else{#>
+                    单选
+                <#}#>
+                </span>
+                <b><#= VoteContent #></b>
+            </p>
+            <p>
+                <#if(isExpire != 0){#>
+                    <span style="margin-right:2em;">投票已结束</span>
+                <#}#>
+                <span><#= VoteCount #>人参与</span>
+            </p>
+            <ul>
+                <#for (var i = 0; i < voteDetails.length; i++) {#>
+                <li data-id="<#= voteDetails[i].VoteId #>">
+                    <div>
+                        <span style="float:right;"><#= voteDetails[i].VoteCount #>票</span>
+                        <p style="width:<#if(voteDetails[i].VoteCount >0 &&VoteCount>0){#><#= voteDetails[i].VoteCount / VoteCount * 70 #><#}else{#>0<#}#>%;">&nbsp;</p>
+                        <span>
+                        <#if(voteDetails[i].VoteCount >0 &&VoteCount>0){#>
+                            <#= Math.round(voteDetails[i].VoteCount / VoteCount * 100) #>
+                        <#}else{#>
+                            0
+                        <#}#>
+                        %</span>
+                    </div>
+                    <#= voteDetails[i].Title #>
+                </li>
+                <#}#>
+            </ul>
+        </section>
+    </script>
+    <script type="text/html" id="relatedArts-tmpl">        
+        <section class="relatedArts">
+            <h6>相关新闻</h6>
+            <ul>
+                <#for (var i = 0; i < relatedArts.length; i++) {#>
+                <li data-id="<#= relatedArts[i].ArticleId #>" data-type="<#= relatedArts[i].ModelType #>"><h6><#= relatedArts[i].Title #></h6></li>
+                <#}#>
+            </ul>
+        </section>
+    </script>
+    <script type="text/html" id="actDefault-tmpl">
+        <div class="activity default">
+            <a href="">正在获取活动状态</a>
+        </div>
+    </script>
+    <script type="text/html" id="actDefault-tmpl">
+        <div class="activity coming">
+            <a href="">即将开始</a>
+        </div>
+    </script>
+    <script type="text/html" id="actJoin-tmpl">
+        <div class="activity join">
+            <a href="">立即参与</a>
+        </div>
+    </script>
+    <script type="text/html" id="actResult-tmpl">
+        <div class="activity result">
+            <a href="">查看结果</a>
+        </div>
+    </script>
+</body>
+</html>

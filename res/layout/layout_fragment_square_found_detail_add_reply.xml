@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <com.mci.firstidol.view.NumberLimitEditText 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="7"
+        android:hint="写点什么..."
+        android:id = "@+id/et_input"
+        android:background="@null"
+        android:gravity="top"
+        android:textSize="14sp"
+        android:padding="10dp"  />
+    <View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_gray_02"/>
+    
+</LinearLayout>

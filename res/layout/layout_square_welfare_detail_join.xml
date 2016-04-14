@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_white"
+    android:paddingTop="20dp"
+    android:gravity="center_horizontal" >
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_gray_02"/>
+    <EditText android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:hint="姓名"
+        android:background="@color/transparent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"/>
+    <View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_gray_02"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+    <EditText android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:hint="手机"
+        android:background="@color/transparent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"/>
+    <View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_gray_02"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <EditText android:id="@+id/et_address"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:hint="地址"
+        android:background="@color/transparent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"/>
+    <View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_gray_02"/>
+
+    <ImageButton
+        android:id="@+id/ib_join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/square_welfare_detail_join"
+        android:background="@null"
+        android:layout_marginTop="40dp" />
+
+</LinearLayout>

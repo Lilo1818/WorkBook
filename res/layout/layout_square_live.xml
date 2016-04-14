@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.mci.firstidol.view.StickyNavLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/stickynavlayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@id/id_stickynavlayout_topview"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@drawable/square_live_detail_title_bg"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <ImageView
+                android:id="@+id/iv_user_logo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/user_logo" />
+
+            <TextView
+                android:id="@+id/tv_main_title"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@+id/iv_user_logo"
+                android:text="冯建宇钻专访直播"
+                android:textColor="@color/color_black"
+                android:textSize="16sp"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tv_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:layout_alignLeft="@+id/tv_main_title"
+                android:layout_below="@+id/tv_main_title"
+                android:text="来一场关于未来的"
+                android:textColor="@color/color_purple_01"
+                android:textSize="14sp"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tv_look_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/iv_user_logo"
+                android:layout_below="@+id/iv_user_logo"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/square_live_detail_look_num"
+                android:text="10"
+                android:textColor="@color/color_black"
+                android:textSize="13sp"
+                android:drawablePadding="3dp" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tv_look_num"
+                android:layout_marginRight="10dp"
+                android:text="距离开始 19:00"
+                android:textColor="@color/color_black"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <com.mci.firstidol.view.SimpleViewPagerIndicator
+            android:id="@id/id_stickynavlayout_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffffff"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+        </com.mci.firstidol.view.SimpleViewPagerIndicator>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_gray_02" />
+
+        <android.support.v4.view.ViewPager
+                android:id="@id/id_stickynavlayout_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#44ff0000" >
+            </android.support.v4.view.ViewPager>
+    </com.mci.firstidol.view.StickyNavLayout>
+
+    <include layout="@layout/layout_live_detail_tool" />
+
+</LinearLayout>

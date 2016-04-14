@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/text_tags"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:hint="您还未有标签。。。"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="13sp"
+        android:textColor="@color/gray"/>
+    
+    <com.mci.firstidol.view.tag.TagCloudView
+        android:id="@+id/tag_cloud"
+        android:layout_margin="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:autoScrollMode="uniform"
+        app:lightColor="#0fe291"
+        app:darkColor="#123456"
+        app:radiusPercent="0.5"
+        app:scrollSpeed="3"/>
+
+</LinearLayout>

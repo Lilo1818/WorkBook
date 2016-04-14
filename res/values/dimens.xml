@@ -1,0 +1,102 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">0dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">0dp</dimen>
+    
+    <dimen name="image_size">120dp</dimen>
+    <dimen name="space_size">2dp</dimen>
+    <dimen name="folder_cover_size">72dp</dimen>
+    
+    
+    <dimen name="photo_width">80dp</dimen>
+    <dimen name="photo_height">80dp</dimen>
+    <dimen name="gridview_padding">4dp</dimen>
+    <dimen name="checkbox_width">24dp</dimen>
+    <dimen name="checkbox_height">24dp</dimen>
+    
+    <dimen name="dp60_textsize">60.0dip</dimen>
+    
+    <dimen name="dp44_textsize">44.0dip</dimen>
+    <dimen name="dp43_textsize">43.0dip</dimen>
+    <dimen name="dp42_textsize">42.0dip</dimen>
+    <dimen name="dp41_textsize">41.0dip</dimen>
+    <dimen name="dp40_textsize">40.0dip</dimen>
+    <dimen name="dp39_textsize">39.0dip</dimen>
+    <dimen name="dp38_textsize">38.0dip</dimen>
+    <dimen name="dp37_textsize">37.0dip</dimen>
+    <dimen name="dp36_textsize">36.0dip</dimen>
+    <dimen name="dp35_textsize">35.0dip</dimen>
+    <dimen name="dp34_textsize">34.0dip</dimen>
+    <dimen name="dp33_textsize">33.0dip</dimen>
+    <dimen name="dp32_textsize">32.0dip</dimen>
+    <dimen name="dp31_textsize">31.0dip</dimen>
+    <dimen name="dp30_textsize">30.0dip</dimen>
+    <dimen name="dp25_textsize">25.0dip</dimen>
+    <dimen name="dp20_textsize">20.0dip</dimen>
+    <dimen name="dp19_textsize">19.0dip</dimen>
+    <dimen name="dp18_textsize">18.0dip</dimen>
+    <dimen name="dp17_textsize">17.0dip</dimen>
+    <dimen name="dp16_textsize">16.0dip</dimen>
+    <dimen name="dp15_textsize">15.0dip</dimen>
+    <dimen name="dp14_textsize">14.0dip</dimen>
+    <dimen name="dp13_textsize">13.0dip</dimen>
+    <dimen name="dp12_textsize">12.0dip</dimen>
+    <dimen name="dp11_textsize">11.0dip</dimen>
+    <dimen name="dp10_textsize">10.0dip</dimen>
+    <dimen name="dp9_textsize">9.0dip</dimen>
+    <dimen name="dp8_textsize">8.0dip</dimen>
+    <dimen name="dp7_textsize">7.0dip</dimen>
+    <dimen name="dp6_textsize">6.0dip</dimen>
+    <dimen name="dp5_textsize">5.0dip</dimen>
+    <dimen name="dp4_textsize">4.0dip</dimen>
+    <dimen name="dp3_textsize">3.0dip</dimen>
+    <dimen name="dp2_textsize">2.0dip</dimen>
+    <dimen name="dp1_textsize">1.0dip</dimen>
+    <dimen name="dp0_textsize">0.0dip</dimen>
+    <dimen name="dp5">5.0dip</dimen>
+    <dimen name="dp10">10.0dip</dimen>
+    <dimen name="dp15">15.0dip</dimen>
+    <dimen name="zhibo_avatar_size">40dp</dimen>
+    <dimen name="zhibo_message_left_padding">18dp</dimen>
+    <dimen name="zhibo_message_right_padding">16dp</dimen>
+    <dimen name="newsfragment_listview_padding">10dp</dimen>
+    <dimen name="text_size_max">25sp</dimen>
+    <dimen name="text_size_super">21sp</dimen>
+    <dimen name="text_size_big">17sp</dimen>
+    <dimen name="text_size_middle">14sp</dimen>
+    <dimen name="text_size_small">10sp</dimen>
+    <dimen name="text_size_comment_time">11sp</dimen>
+    <dimen name="text_size_header_right">15sp</dimen>
+    <dimen name="text_size_ad">12sp</dimen>
+    
+    <dimen name="item_shopping_padding">10dp</dimen>
+    <dimen name="item_padding_top">5dp</dimen>
+    
+    <dimen name="personal_margin_top">10dp</dimen>
+    
+    <dimen name="video_margin_top">6dp</dimen>
+    <dimen name="video_margin_left">20dp</dimen>
+    
+    <!-- 设置中字号定义 -->
+    <dimen name="setting_content_text_size_small">15sp</dimen>
+    <dimen name="setting_content_text_size_normal">17sp</dimen>
+    <dimen name="setting_content_text_size_large">19sp</dimen>
+    
+    
+    <!-- MEDIA CONTROLLER -->
+    <dimen name="media_controller_text_size">14sp</dimen>
+    <dimen name="media_controller_seekbar_width">32dip</dimen>
+    <dimen name="media_controller_seekbar_height">32dip</dimen>
+    <dimen name="media_controller_top_margin">80dip</dimen>
+    <dimen name="media_controller_bottom_margin">12dip</dimen>
+    <dimen name="media_controller_view_height">48dip</dimen>
+    <dimen name="media_controller_button_height">52dip</dimen>
+    <dimen name="media_controller_button_width">71dip</dimen>
+</resources>

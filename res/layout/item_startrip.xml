@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="vertical"
+    android:background="@color/white">
+    
+    <LinearLayout 
+        android:id="@+id/layout_left"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical">
+        
+        <TextView 
+            android:id="@+id/text_date"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"/>
+        
+        <TextView 
+            android:id="@+id/text_weekend"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"/>
+        
+    </LinearLayout>
+    
+    <ImageView 
+        android:id="@+id/image_click"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"/>
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/layout_left"
+        android:layout_toLeftOf="@id/image_click"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+        
+        <TextView 
+            android:id="@+id/text_title"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/text_main_black"
+            android:singleLine="true"
+            android:textSize="16sp"/>
+        
+        <TextView 
+            android:id="@+id/text_address"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/gray"/>
+        
+    </LinearLayout>
+    
+
+    <View 
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_bg"/>
+    
+</RelativeLayout>

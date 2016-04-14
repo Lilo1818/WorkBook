@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/btm_white">
+    
+    <View 
+        android:layout_height="2px"
+        android:layout_width="match_parent"
+        android:background="@color/color_bg"/>
+
+    <com.mci.firstidol.view.MyGridView
+        android:id="@+id/myGridView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btm_white"
+        android:horizontalSpacing="1.0dip"
+        android:listSelector="@color/btm_white"
+        android:paddingBottom="1.0dip"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="1.0dip" />
+
+</LinearLayout>

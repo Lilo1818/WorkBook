@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" xmlns:app="http://schemas.android.com/apk/res/net.easyidol.activity">
+    
+    <com.mci.firstidol.view.convenientbanner.ConvenientBanner
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/convenientBanner"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:canLoop="true"
+        />
+    
+    <!-- <net.easyidol.view.bgabanner.BGABanner 
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/banner_splash_pager"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    app:banner_pointAutoPlayAble="true"
+    app:banner_pageChangeDuration="4"
+    app:banner_pointTopBottomMargin="4dp"
+    app:banner_tipTextSize="17sp"/> -->
+
+</LinearLayout>

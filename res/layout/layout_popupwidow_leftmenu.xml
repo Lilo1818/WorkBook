@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dp36_textsize"
+    android:background="@drawable/square_collection"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dp10_textsize"
+    android:paddingRight="@dimen/dp20_textsize"
+    android:id="@+id/ll_popup" >
+
+    <LinearLayout
+        android:id="@+id/ll_more"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <Button
+            android:id="@+id/btn_top"
+            style="@style/popwindow_button"
+            android:tag="0"
+            android:text="@string/btn_top" />
+        
+        <View style="@style/popwindow_view" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            style="@style/popwindow_button"
+            android:tag="1"
+            android:text="@string/btn_delete" />
+
+        <View style="@style/popwindow_view" />
+    </LinearLayout>
+    <LinearLayout 
+        android:id="@+id/ll_rore"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        >
+        <Button
+	        android:id="@+id/btn_report"
+	        style="@style/popwindow_button"
+	        android:tag="3"
+	        android:text="@string/btn_report" />
+	<View style="@style/popwindow_view" />
+    </LinearLayout>
+	
+    <Button
+        android:id="@+id/btn_collection"
+        style="@style/popwindow_button"
+        android:tag="2"
+        android:text="@string/btn_collection" />
+
+</LinearLayout>

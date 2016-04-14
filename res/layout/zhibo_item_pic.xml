@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_pic" >
+
+    <net.frakbot.imageviewex.ImageViewNext
+        android:id="@+id/one_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/zhibo_message_default_icon" />
+
+    <LinearLayout
+        android:id="@+id/two_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <net.frakbot.imageviewex.ImageViewNext
+            android:id="@+id/two_pic_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/zhibo_message_default_icon" />
+
+        <net.frakbot.imageviewex.ImageViewNext
+            android:id="@+id/two_pic_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/zhibo_message_default_icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/three_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <net.frakbot.imageviewex.ImageViewNext
+            android:id="@+id/three_pic_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/zhibo_message_default_icon" />
+
+        <net.frakbot.imageviewex.ImageViewNext
+            android:id="@+id/three_pic_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/zhibo_message_default_icon" />
+
+        <net.frakbot.imageviewex.ImageViewNext
+            android:id="@+id/three_pic_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/zhibo_message_default_icon" />
+    </LinearLayout>
+
+</RelativeLayout>

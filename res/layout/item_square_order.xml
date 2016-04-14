@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingLeft="0dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView1"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:singleLine="true" />
+
+    <ImageView
+        android:id="@+id/iv_user_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/user_logo"
+        />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="防弹少年团"
+        android:textColor="@color/color_purple_01"
+        android:textSize="15sp"
+        android:gravity="left"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:id="@+id/tv_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView1"
+        android:text="活跃度:10000"
+        android:textColor="@color/color_gray_02"
+        android:textSize="15sp"
+        android:gravity="right"  />
+
+</LinearLayout>
